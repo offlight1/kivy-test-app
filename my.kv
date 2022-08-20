@@ -1,0 +1,31 @@
+<MyGrid>
+
+    username: username
+    password: password
+
+    GridLayout:
+        cols:1
+        size: root.width -200, root.height -200
+        pos: 100, 100
+
+        GridLayout:
+            cols:2  
+            
+            Label:
+                text:"Username:"
+
+            TextInput:
+                id:username
+                multiline:False
+            
+            Label:
+                text:"Password:"
+            
+            TextInput:
+                id:password
+                multiline:False
+        
+        Button:
+            text:"Sign Up!"
+            on_press:root.btn()
+        
